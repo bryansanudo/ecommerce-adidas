@@ -1,7 +1,5 @@
 import React from "react";
 
-import { TypingText, TitleText } from "@/components/CustomTexts";
-
 const Section = ({ title, subtitle, children, name }) => {
   return (
     <div>
