@@ -1,14 +1,10 @@
 import React from "react";
 import Section from "@/components/common/Section";
 
-import product1 from "@/assets/categorys/product3/product1.jpg";
-import product2 from "@/assets/categorys/product3/product2.jpg";
-import product3 from "@/assets/categorys/product3/product3.jpg";
-import product4 from "@/assets/categorys/product3/product4.jpg";
+
 
 import Navigate from "@/components/categorys/Navigate";
-import IconInstagram from "@/icons/IconInstagram";
-import IconWpp from "@/icons/IconWpp";
+
 import { motion } from "framer-motion";
 import { MdOutlineAddShoppingCart } from "react-icons/md";
 

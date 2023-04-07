@@ -1,12 +1,10 @@
 import Header from "@/components/Header";
-import Hero from "@/components/Hero";
+
 import HeroSection from "@/components/HeroSection";
 
 import { useState } from "react";
 
-import Footer from "@/components/Footer";
-
-import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 import Product1 from "@/components/categorys/Product1";
 import Product2 from "@/components/categorys/Product2";
@@ -92,8 +90,6 @@ function App() {
             />
           </Routes>
         </BrowserRouter>
-
-        {/* <Footer /> */}
       </main>
     </div>
   );

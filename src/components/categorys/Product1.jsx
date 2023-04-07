@@ -1,14 +1,8 @@
 import React from "react";
 import Section from "@/components/common/Section";
 
-import product1 from "@/assets/categorys/product1/product1.jpg";
-import product2 from "@/assets/categorys/product1/product2.jpg";
-import product3 from "@/assets/categorys/product1/product3.jpg";
-import product4 from "@/assets/categorys/product1/product4.jpg";
-
 import Navigate from "@/components/categorys/Navigate";
-import IconInstagram from "@/icons/IconInstagram";
-import IconWpp from "@/icons/IconWpp";
+
 import { motion } from "framer-motion";
 
 import { staggerContainer, fadeIn } from "@/utils/motion";
@@ -112,9 +106,9 @@ const Product1 = ({
                   {product.nameProduct}
                 </p>
                 <div className=" capitalize text-sm md:text-lg flex mb-2  items-center justify-center gap-2">
-                  <div className="flex gap-5">{product.price}</div>
+                  <div className="flex gap-5">${product.price}</div>
                   <button onClick={() => onAddProduct(product)} className=" ">
-                    <MdOutlineAddShoppingCart className="text-xl" />
+                    <MdOutlineAddShoppingCart className="text-2xl animate-pulse" />
                   </button>
                 </div>
               </motion.div>
