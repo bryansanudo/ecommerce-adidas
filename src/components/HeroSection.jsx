@@ -24,13 +24,13 @@ const HeroSection = ({ isMenuShown }) => {
       <video
         ref={videoRef}
         autoPlay
-        src="https://rr4---sn-cvb7lnls.googlevideo.com/videoplayback?expire=1680846524&ei=XFovZLULjorH8A_46bvgCg&ip=212.102.39.90&id=o-AA2m8IKFgqP3SnY2w5QvQPfowy1hS3zf2CEQCUorhkmq&itag=248&aitags=133%2C134%2C135%2C136%2C137%2C160%2C242%2C243%2C244%2C247%2C248%2C278&source=youtube&requiressl=yes&spc=99c5CUx6Ym62JMWDSjhaDE2jeqYfhC6ZT580GbXgaA&vprv=1&mime=video%2Fwebm&ns=f5W_sT4UnnV_PzBoCO5IjiMM&gir=yes&clen=11195157&dur=60.000&lmt=1679451057043026&keepalive=yes&fexp=24007246&c=WEB&txp=443E434&n=3tSXgIucBBrmMg&sparams=expire%2Cei%2Cip%2Cid%2Caitags%2Csource%2Crequiressl%2Cspc%2Cvprv%2Cmime%2Cns%2Cgir%2Cclen%2Cdur%2Clmt&sig=AOq0QJ8wRQIgF4OkovinkJMtKF0K9BE5Y6wIGZrxv2pOAQLVR7QQoFoCIQCoVC5A97M8YanGFuWxBU8Gvd84gR_EfKKsUY3VQi-LQg%3D%3D&rm=sn-n02xgoxufvg3-2gbz7z,sn-2gbl776&req_id=1ae48cd72dfca3ee&cmsv=e&redirect_counter=2&cms_redirect=yes&ipbypass=yes&mh=oH&mip=2800:e2:d80:29d2:816c:900b:ce99:12a7&mm=29&mn=sn-cvb7lnls&ms=rdu&mt=1680824481&mv=m&mvi=4&pl=53&lsparams=ipbypass,mh,mip,mm,mn,ms,mv,mvi,pl&lsig=AG3C_xAwRgIhALsuO0yrwJbzrkSBJkYHOg9WzuCG0-CBCI_E6c5jRB8CAiEAuSJidgVEmcyA7Pic0sBsRHqP8518TUimbp8yj_p4mJ0%3D"
+        src="https://situla.bitbit.net/filebin/25304676e852aa5ecc5b21b6f4d6cb52d78afcfdf6cf61ea028cb0299be74a36/707f334cabdc410adddac567a42547bf285b0524503e3eccf8ec6f23e1e5afd8?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=HZXB1J7T0UN34UN512IW%2F20230407%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20230407T172153Z&X-Amz-Expires=30&X-Amz-SignedHeaders=host&response-cache-control=max-age%3D30&response-content-disposition=filename%3D%22videoplayback__1_.webm%22&response-content-type=video%2Fwebm&X-Amz-Signature=d49a9baa7f0ec1e7e2bebdb1697f115780f929220d57cbacf236e6c5d4cfe314"
         loop
         type="video/mp4"
         playsInline
         muted
         className="h-full object-cover  w-full absolute "
-      ></video>
+      />
       <div
         className={` w-full p-8 flex flex-row items-center z-10 justify-center duration-500  gap-10 ${
           isMenuShown ? "opacity-20" : "opacity-100"
