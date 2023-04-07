@@ -3,10 +3,6 @@ import Section from "@/components/common/Section";
 
 import Navigate from "@/components/categorys/Navigate";
 
-import { motion } from "framer-motion";
-
-import { staggerContainer, fadeIn } from "@/utils/motion";
-
 import { MdOutlineAddShoppingCart } from "react-icons/md";
 
 const Product1 = ({
@@ -82,41 +78,33 @@ const Product1 = ({
     setAllProducts([...allProducts, product]);
   };
   return (
-    <motion.div
-      variants={staggerContainer}
-      initial="hidden"
-      whileInView="show"
-      viewport={{ once: false, amount: 0.25 }}
-    >
-      <Section name="portafolio">
-        <div className="mx-auto flex h-full w-full max-w-screen-lg flex-col justify-center  ">
-          <Navigate />
-          <div className="grid gap-8 md:px-12 grid-cols-1  lg:grid-cols-3">
-            {portfolios.map((product) => (
-              <motion.div
-                /* variants={fadeIn("right", "spring", product.delay * 0.5, 0.75)}
-                key={product.id} */
-                className="flex flex-col items-center justify-center"
-              >
-                <img
-                  src={product.src}
-                  className="  shadow-lg shadow-gray-400  object-cover object-top rounded-xl "
-                />
-                <p className="mt-6 capitalize text-sm md:text-lg">
-                  {product.nameProduct}
-                </p>
-                <div className=" capitalize text-sm md:text-lg flex mb-2  items-center justify-center gap-2">
-                  <div className="flex gap-5">${product.price}</div>
-                  <button onClick={() => onAddProduct(product)} className=" ">
-                    <MdOutlineAddShoppingCart className="text-2xl animate-pulse" />
-                  </button>
-                </div>
-              </motion.div>
-            ))}
-          </div>
+    <Section name="portafolio">
+      <div className="mx-auto flex h-full w-full max-w-screen-lg flex-col justify-center  ">
+        <Navigate />
+        <div className="grid gap-8 md:px-12 grid-cols-1  lg:grid-cols-3">
+          {portfolios.map((product) => (
+            <div
+              key={product.id}
+              className="flex flex-col items-center justify-center"
+            >
+              <img
+                src={product.src}
+                className="  shadow-lg shadow-gray-400  object-cover object-top rounded-xl "
+              />
+              <p className="mt-6 capitalize text-sm md:text-lg">
+                {product.nameProduct}
+              </p>
+              <div className=" capitalize text-sm md:text-lg flex mb-2  items-center justify-center gap-2">
+                <div className="flex gap-5">${product.price}</div>
+                <button onClick={() => onAddProduct(product)} className=" ">
+                  <MdOutlineAddShoppingCart className="text-2xl animate-pulse" />
+                </button>
+              </div>
+            </div>
+          ))}
         </div>
-      </Section>
-    </motion.div>
+      </div>
+    </Section>
   );
 };
 
