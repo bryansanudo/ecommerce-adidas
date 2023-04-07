@@ -94,8 +94,8 @@ const Product1 = ({
           <div className="grid gap-8 md:px-12 grid-cols-1  lg:grid-cols-3">
             {portfolios.map((product) => (
               <motion.div
-                variants={fadeIn("right", "spring", product.delay * 0.5, 0.75)}
-                key={product.id}
+                /* variants={fadeIn("right", "spring", product.delay * 0.5, 0.75)}
+                key={product.id} */
                 className="flex flex-col items-center justify-center"
               >
                 <img
